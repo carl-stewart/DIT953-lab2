@@ -10,7 +10,8 @@ de filer som krävs. Koden som skrivs och godkänns i denna lab kommer att
 användas till de senare delarna.
 
 Börja med att klona repot https://github.com/niklasbroberg/DIT952-lab2. Där
-hittar ni detta lab-pm samt några nya klassfiler.
+hittar ni detta lab-pm samt några nya klassfiler. Notera att de nya
+klasserna har allvarliga brister vad gäller design och implementation.
 
 Notera att ni kommer behöva er färdiga lösning från Lab 1.
 
@@ -25,7 +26,7 @@ av en tredje part som inte haft tillgång till vare sig kod, dokumentation eller
 designdokument för er lösning.
 
 Gör de eventuella ändringar i CarController, CarView och DrawPanel som behövs
-för att det ska gå att använda med er lösning från lab 1.
+för att det ska gå att använda tillsammans med er lösning från lab 1.
 
 När ni är färdiga ska ni kunna köra CarController och se Volvo-bilen röra sig
 (genom att öka värdet på gasen och gasa). Notera att vi förutsätter att ni
@@ -48,8 +49,8 @@ den helt, inverterar sin riktning och startar igen.
 Sätt in Saab95, Scania och deras respektive bilder med 100 pixlars avstånd i
 Y-led från varandra (alla avbildas ursprungligen med X=0).
 
-Koppla turbo-knapparna till Saaben och flakknapparna till Scania, men även
-"starta och stoppa alla bilar"-knapparna.
+Koppla turbo-knapparna till Saaben och flakknapparna till Scania. Koppla "starta
+och stoppa alla bilar"-knapparna till bägge.
 
 Även dessa bilar ska förhindras att åka utanför rutan.
 
@@ -64,22 +65,19 @@ Vilka beroenden är nödvändiga? Vilka klasser är beroende av varandra som int
 bör vara det? Finns det starkare beroenden än nödvändigt? Kan ni identifiera
 några brott mot övriga designprinciper vi pratat om i kursen?
 
-Rita ett UML-diagram över en ny design som åtgärdar de brister ni
-identifierat. Motivera, i termer av de principer vi gått igenom, varför era
-förbättringar verkligen är förbättringar.
-
-Ni behöver inte implementera er nya design; det återkommer vi till i senare
-labbar.
+Ni behöver inte göra någon ny design eller implementation; det återkommer vi
+till i senare labbar.
 
 == Frivillig BONUS-uppgift ==
-- Ordna en dialogruta som startar i början av programmet som frågar efter vilka
-av de 3 bilarna ni vill inkludera i simulationen. Fråga även användaren om
-simulationens hastighet: Snabb (20 ms delay), Normal (50 ms), Långsam (100 ms).
-- Skriv ut "<Bil>: <Hastighet>" i något lämpligt hörn av panelen, eller kanske
-  på en helt ny JLabel ni kan lägga under alla knappar.
-- Kan du få piltangenterna på tangentbordet att ändra bilarnas riktning, och se
-  till att de inte krockar med varandra utan studsar ifrån varann?
-  (Very Hard mode)
+- Utöka era fordonsmodell (men inte användargränssnittet) med stöd för
+  kollisionshantering. Implementera metoder för att avgöra om två fordon kommer
+  krocka vid nästa move(). Implementera något sätt att undvika sådana
+  kollisioner --- till exempel kan ni låta bilarna studsa ifrån varandra eller
+  väja åt sidan. Hur kan man se till att kollisionshanteringen inte ger falskt
+   alarm när man testar för kollision mellan en biltransport och en på
+  biltransporten pålastad bil? För två bilar lastade på samma biltransport? För
+  För två bilar lastade på olika biltransporter, men som i sin tur är lastade på
+  samma bilfärja? För ännu oimplementerade typer av biltransport?
 
 --------------------------------------------------------------------------------
 Krav för godkänd redovisning:
