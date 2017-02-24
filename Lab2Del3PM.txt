@@ -43,8 +43,7 @@ För vart och ett av de design patterns ni valt, svara på följande frågor:
 - Finns det något ställe där ni kan förbättra er design genom att använda detta
   design pattern? Vilka designproblem skulle ni lösa genom att använda det?
 
-Ni måste kunna svara "ja" på någon av de två frågorna för vart och ett av de
-fyra design patterns ni väljer.
+Ni bör i första hand välja design patterns som låter er svara "ja" på någon av de två frågorna ovan. Om ni inte hittar fyra som går att använda, förklara för de ni väljer som inte går att använda varför de inte skulle förbättra er design.
 
 Programmerings-uppgifter:
 =========================
