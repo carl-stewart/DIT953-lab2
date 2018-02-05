@@ -9,7 +9,7 @@ labbdokumentet och se vad som krävs för att få godkänt, samt att ni laddar n
 de filer som krävs. Koden som skrivs och godkänns i denna lab kommer att
 användas till de senare delarna.
 
-Börja med att klona repot https://github.com/niklasbroberg/DIT952-lab2. Där
+Börja med att klona repot https://github.com/niklasbroberg/DIT953-lab2. Där
 hittar ni detta lab-pm samt några nya klassfiler. Notera att de nya
 klasserna har allvarliga brister vad gäller design och implementation.
 

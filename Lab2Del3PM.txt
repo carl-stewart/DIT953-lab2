@@ -29,21 +29,31 @@ Vilka brister åtgärdade ni inte? Rita ett UML-diagram som beskriver en
 förbättrad design med avseende på MVC.
 
 (Det ursprungliga gränssnittet finns kvar i git-repot där ni hittade det:
-  https://github.com/niklasbroberg/DIT952-lab2)
+  https://github.com/niklasbroberg/DIT953-lab2)
 
 Uppgift b)
 
-Välj åtminstone fyra av de övriga design patterns ni sett i kursen: 
-Factory, Facade, Template, Adapter, Module, Composite, Iterator, Strategy, State. 
-För vart och ett av de design patterns ni valt, svara på följande frågor:
+Factory method, composite, state, observer. För vart och ett av dessa fyra
+design patterns, svara på följande frågor:
 
 - Finns det något ställe i er design där ni redan använder detta pattern,
   avsiktligt eller oavsiktligt? Vilka designproblem löste ni genom att använda
   det?
 - Finns det något ställe där ni kan förbättra er design genom att använda detta
   design pattern? Vilka designproblem skulle ni lösa genom att använda det?
+  Om inte, varför skulle er design inte förbättras av att använda det?
 
-Ni bör i första hand välja design patterns som låter er svara "ja" på någon av de två frågorna ovan. Om ni inte hittar fyra som går att använda, förklara för de ni väljer som inte går att använda varför de inte skulle förbättra er design.
+VG-uppgift:
+=========================
+Skriv ut "<Bil>: <Hastighet>" i något lämpligt hörn av panelen, eller kanske
+på en helt ny JLabel ni kan lägga under alla knappar. Detta bör göras inte som
+ett tillägg till den befintliga vyn, utan som en ny vy som kan samexistera med
+den gamla vyn, existera fristående från den gamla vyn, eller samexistera med
+helt andra vyer.
+
+Hur bör eran MVC-lösning vara utformad för att möjliggöra att ovanstående
+förändring blir en utökning snarare än en modifikation? Hur bör de olika
+komponenterna kommunicera med varandra?
 
 Programmerings-uppgifter:
 =========================

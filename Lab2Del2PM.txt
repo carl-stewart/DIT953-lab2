@@ -29,7 +29,7 @@ med avseende både på beroenden och ansvarsfördelning, dvs. både från uppgif
 och från del 1 uppgift c).
 
 Motivera, i termer av de principer vi gått igenom, varför era förbättringar
-verkligen är förbättringar.
+verkligen är förbättringar. Relatera till de design patterns ni sett.
 
 Uppgift c)
 
@@ -42,16 +42,22 @@ utvecklare som arbetar oberoende av varandra? Om inte, finns det något sätt at
 omformulera planen så att en sådan arbetsdelning är möjlig?
 
 Uppgift d)
-
 Refaktorisera koden med hjälp av planen från föregående uppgift. Förvissa er om
 att programmets funktionalitet förblir oförändrad.
+
+VG-uppgift:
+=========================
+
+Gör bilmodellen (men inte användargränssnittet) immutable i görligaste mån.
+Gör detta utan att programmets observerbara beteende ändras: fast ett bilobjekt inte
+kan ändras efter att det skapas, ska användarupplevelsen med bilar som rör sig vara
+oförändrad. Resonera om för- och nackdelar med att gå olika långt i projektet att göra
+allt immutable.
 
 == Frivillig BONUS-uppgift ==
 - Ordna en dialogruta som startar i början av programmet, som frågar vilka
   av de 3 bilarna ni vill inkludera i simulationen. Fråga även användaren om
   simulationens hastighet: Snabb (20 ms delay), Normal (50 ms), Långsam (100 ms).
-- Skriv ut "<Bil>: <Hastighet>" i något lämpligt hörn av panelen, eller kanske
-  på en helt ny JLabel ni kan lägga under alla knappar.
 - Kan du få piltangenterna på tangentbordet att ändra bilarnas riktning, och se
   till att kollisioner hanteras med kollisionshanteringen från bonusuppgiften
   i del 1?
