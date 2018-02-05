@@ -57,6 +57,11 @@ och stoppa alla bilar"-knapparna till bägge.
 == Uppgift c) ==
 
 Rita upp ett UML-diagram över systemet i dess nuvarande skick.
+Inkludera samtliga klasser och samtliga beroenden mellan klasserna i UML-diagrammet.
+Skilj på association, usage dependency, generalisering och och realisering.
+Ni behöver inte ha med alla metoder och fält, men inkludera tillräckligt för
+att åskådliggöra varför de beroenden som finns finns. Ni får rita UML-diagrammet
+med vilket verktyg ni vill så länge resultatet är läsligt.
 
 Analysera de beroenden som finns med avseende på cohesion, coupling och
 dependency inversion principle.
