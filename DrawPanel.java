@@ -27,12 +27,13 @@ public class DrawPanel extends JPanel{
         this.setBackground(Color.green);
         // Print an error message in case file is not found with a try/catch block
         try {
-            // You can remove the "src\\pics" part if running outside of IntelliJ and
+            // You can remove the "pics" part if running outside of IntelliJ and
             // everything is in the same main folder.
+            // volvoImage = ImageIO.read(new File("Volvo240.jpg"));
+
             // Rememember to rightclick src New -> Package -> name: pics -> MOVE *.jpg to pics.
             // if you are starting in IntelliJ.
-            // Linux users need to modify \ to / in path string
-            volvoImage = ImageIO.read(new File("src\\pics\\Volvo240.jpg"));
+            volvoImage = ImageIO.read(new File(String.join(File.separator, "pics", "Volvo240.jpg"));
         } catch (IOException ex)
         {
             ex.printStackTrace();
